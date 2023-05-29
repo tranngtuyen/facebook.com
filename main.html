@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Đăng nhập</title>
+<style>
+ /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  height: 400px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Login container styles */
+.login-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  display: flex;
+}
+/* ... */
+.left-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.left-content h1 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1877f2; /* Màu xanh Facebook */
+}
+
+/* ... */
+
+.right-content {
+    height: 315px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  flex: 1;
+  /* padding-left: 20px; */
+}
+p{
+    font-size: 24px;
+}
+h1 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1877f2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1877f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 15px;
+  margin-bottom: -2px;
+  border: 1px solid #d8cfcf;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+
+  outline: none;
+  border: 1px solid #1877f2;
+ 
+}
+
+input[type="submit"] {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #166fe5;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-content">
+          <h1>Facebook<br></h1><p>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.<p>
+        </div>
+        <div class="right-content">
+          <h2>Đăng nhập</h2>
+          <form method="post" action="login.php">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" placeholder="Email hoặc số điện thoại" required><br><br>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu" required><br><br>
+            <input type="submit" value="Đăng nhập"
+            >
+          </form>
+        </div>
+      </div>
+    </body>
+    </html>
